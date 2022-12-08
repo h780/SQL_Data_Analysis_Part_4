@@ -1,0 +1,1204 @@
+
+LOCATION_ID STREET_ADDRESS                           POSTAL_CODE  CITY                           STATE_PROVINCE            CO
+----------- ---------------------------------------- ------------ ------------------------------ ------------------------- --
+       1000 1297 Via Cola di Rie                     00989        Roma                                                     IT
+       1100 93091 Calle della Testa                  10934        Venice                                                   IT
+       1200 2017 Shinjuku-ku                         1689         Tokyo                          Tokyo Prefecture          JP
+       1300 9450 Kamiya-cho                          6823         Hiroshima                                                JP
+       1400 2014 Jabberwocky Rd                      26192        Southlake                      Texas                     US
+       1500 2011 Interiors Blvd                      99236        South San Francisco            California                US
+       1600 2007 Zagora St                           50090        South Brunswick                New Jersey                US
+       1700 2004 Charade Rd                          98199        Seattle                        Washington                US
+       1800 147 Spadina Ave                          M5V 2L7      Toronto                        Ontario                   CA
+       1900 6092 Boxwood St                          YSW 9T2      Whitehorse                     Yukon                     CA
+       2000 40-5-12 Laogianggen                      190518       Beijing                                                  CN
+
+LOCATION_ID STREET_ADDRESS                           POSTAL_CODE  CITY                           STATE_PROVINCE            CO
+----------- ---------------------------------------- ------------ ------------------------------ ------------------------- --
+       2100 1298 Vileparle (E)                       490231       Bombay                         Maharashtra               IN
+       2200 12-98 Victoria Street                    2901         Sydney                         New South Wales           AU
+       2300 198 Clementi North                       540198       Singapore                                                SG
+       2400 8204 Arthur St                                        London                                                   UK
+       2500 Magdalen Centre, The Oxford Science Park OX9 9ZB      Oxford                         Oxford                    UK
+       2600 9702 Chester Road                        09629850293  Stretford                      Manchester                UK
+       2700 Schwanthalerstr. 7031                    80925        Munich                         Bavaria                   DE
+       2800 Rua Frei Caneca 1360                     01307-002    Sao Paulo                      Sao Paulo                 BR
+       2900 20 Rue des Corps-Saints                  1730         Geneva                         Geneve                    CH
+       3000 Murtenstrasse 921                        3095         Bern                           BE                        CH
+       3100 Pieter Breughelstraat 837                3029SK       Utrecht                        Utrecht                   NL
+
+LOCATION_ID STREET_ADDRESS                           POSTAL_CODE  CITY                           STATE_PROVINCE            CO
+----------- ---------------------------------------- ------------ ------------------------------ ------------------------- --
+       3200 Mariano Escobedo 9991                    11932        Mexico City                    Distrito Federal,         MX
+
+23 rows selected. 
+
+
+DEPARTMENT_ID DEPARTMENT_NAME                MANAGER_ID LOCATION_ID
+------------- ------------------------------ ---------- -----------
+           10 Administration                        200        1700
+           20 Marketing                             201        1800
+           30 Purchasing                            114        1700
+           40 Human Resources                       203        2400
+           50 Shipping                              121        1500
+           60 IT                                    103        1400
+           70 Public Relations                      204        2700
+           80 Sales                                 145        2500
+           90 Executive                             100        1700
+          100 Finance                               108        1700
+          110 Accounting                            205        1700
+
+DEPARTMENT_ID DEPARTMENT_NAME                MANAGER_ID LOCATION_ID
+------------- ------------------------------ ---------- -----------
+          120 Treasury                                         1700
+          130 Corporate Tax                                    1700
+          140 Control And Credit                               1700
+          150 Shareholder Services                             1700
+          160 Benefits                                         1700
+          170 Manufacturing                                    1700
+          180 Construction                                     1700
+          190 Contracting                                      1700
+          200 Operations                                       1700
+          210 IT Support                                       1700
+          220 NOC                                              1700
+
+DEPARTMENT_ID DEPARTMENT_NAME                MANAGER_ID LOCATION_ID
+------------- ------------------------------ ---------- -----------
+          230 IT Helpdesk                                      1700
+          240 Government Sales                                 1700
+          250 Retail Sales                                     1700
+          260 Recruiting                                       1700
+          270 Payroll                                          1700
+
+27 rows selected. 
+
+
+JOB_ID     JOB_TITLE                           MIN_SALARY MAX_SALARY
+---------- ----------------------------------- ---------- ----------
+AD_PRES    President                                20000      40000
+AD_VP      Administration Vice President            15000      30000
+AD_ASST    Administration Assistant                  3000       6000
+FI_MGR     Finance Manager                           8200      16000
+FI_ACCOUNT Accountant                                4200       9000
+AC_MGR     Accounting Manager                        8200      16000
+AC_ACCOUNT Public Accountant                         4200       9000
+SA_MAN     Sales Manager                            10000      20000
+SA_REP     Sales Representative                      6000      12000
+PU_MAN     Purchasing Manager                        8000      15000
+PU_CLERK   Purchasing Clerk                          2500       5500
+
+JOB_ID     JOB_TITLE                           MIN_SALARY MAX_SALARY
+---------- ----------------------------------- ---------- ----------
+ST_MAN     Stock Manager                             5500       8500
+ST_CLERK   Stock Clerk                               2000       5000
+SH_CLERK   Shipping Clerk                            2500       5500
+IT_PROG    Programmer                                4000      10000
+MK_MAN     Marketing Manager                         9000      15000
+MK_REP     Marketing Representative                  4000       9000
+HR_REP     Human Resources Representative            4000       9000
+PR_REP     Public Relations Representative           4500      10500
+
+19 rows selected. 
+
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME                 EMAIL                     PHONE_NUMBER         HIRE_DAT JOB_ID         SALARY COMMISSION_PCT MANAGER_ID DEPARTMENT_ID
+----------- -------------------- ------------------------- ------------------------- -------------------- -------- ---------- ---------- -------------- ---------- -------------
+        100 Steven               King                      SKING                     515.123.4567         17-06-87 AD_PRES         24000                                      90
+        101 Neena                Kochhar                   NKOCHHAR                  515.123.4568         21-09-89 AD_VP           17000                       100            90
+        102 Lex                  De Haan                   LDEHAAN                   515.123.4569         13-01-93 AD_VP           17000                       100            90
+        103 Alexander            Hunold                    AHUNOLD                   590.423.4567         03-01-90 IT_PROG          9000                       102            60
+        104 Bruce                Ernst                     BERNST                    590.423.4568         21-05-91 IT_PROG          6000                       103            60
+        105 David                Austin                    DAUSTIN                   590.423.4569         25-06-97 IT_PROG          4800                       103            60
+        106 Valli                Pataballa                 VPATABAL                  590.423.4560         05-02-98 IT_PROG          4800                       103            60
+        107 Diana                Lorentz                   DLORENTZ                  590.423.5567         07-02-99 IT_PROG          4200                       103            60
+        108 Nancy                Greenberg                 NGREENBE                  515.124.4569         17-08-94 FI_MGR          12000                       101           100
+        109 Daniel               Faviet                    DFAVIET                   515.124.4169         16-08-94 FI_ACCOUNT       9000                       108           100
+        110 John                 Chen                      JCHEN                     515.124.4269         28-09-97 FI_ACCOUNT       8200                       108           100
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME                 EMAIL                     PHONE_NUMBER         HIRE_DAT JOB_ID         SALARY COMMISSION_PCT MANAGER_ID DEPARTMENT_ID
+----------- -------------------- ------------------------- ------------------------- -------------------- -------- ---------- ---------- -------------- ---------- -------------
+        111 Ismael               Sciarra                   ISCIARRA                  515.124.4369         30-09-97 FI_ACCOUNT       7700                       108           100
+        112 Jose Manuel          Urman                     JMURMAN                   515.124.4469         07-03-98 FI_ACCOUNT       7800                       108           100
+        113 Luis                 Popp                      LPOPP                     515.124.4567         07-12-99 FI_ACCOUNT       6900                       108           100
+        114 Den                  Raphaely                  DRAPHEAL                  515.127.4561         07-12-94 PU_MAN          11000                       100            30
+        115 Alexander            Khoo                      AKHOO                     515.127.4562         18-05-95 PU_CLERK         3100                       114            30
+        116 Shelli               Baida                     SBAIDA                    515.127.4563         24-12-97 PU_CLERK         2900                       114            30
+        117 Sigal                Tobias                    STOBIAS                   515.127.4564         24-07-97 PU_CLERK         2800                       114            30
+        118 Guy                  Himuro                    GHIMURO                   515.127.4565         15-11-98 PU_CLERK         2600                       114            30
+        119 Karen                Colmenares                KCOLMENA                  515.127.4566         10-08-99 PU_CLERK         2500                       114            30
+        120 Matthew              Weiss                     MWEISS                    650.123.1234         18-07-96 ST_MAN           8000                       100            50
+        121 Adam                 Fripp                     AFRIPP                    650.123.2234         10-04-97 ST_MAN           8200                       100            50
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME                 EMAIL                     PHONE_NUMBER         HIRE_DAT JOB_ID         SALARY COMMISSION_PCT MANAGER_ID DEPARTMENT_ID
+----------- -------------------- ------------------------- ------------------------- -------------------- -------- ---------- ---------- -------------- ---------- -------------
+        122 Payam                Kaufling                  PKAUFLIN                  650.123.3234         01-05-95 ST_MAN           7900                       100            50
+        123 Shanta               Vollman                   SVOLLMAN                  650.123.4234         10-10-97 ST_MAN           6500                       100            50
+        124 Kevin                Mourgos                   KMOURGOS                  650.123.5234         16-11-99 ST_MAN           5800                       100            50
+        125 Julia                Nayer                     JNAYER                    650.124.1214         16-07-97 ST_CLERK         3200                       120            50
+        126 Irene                Mikkilineni               IMIKKILI                  650.124.1224         28-09-98 ST_CLERK         2700                       120            50
+        127 James                Landry                    JLANDRY                   650.124.1334         14-01-99 ST_CLERK         2400                       120            50
+        128 Steven               Markle                    SMARKLE                   650.124.1434         08-03-00 ST_CLERK         2200                       120            50
+        129 Laura                Bissot                    LBISSOT                   650.124.5234         20-08-97 ST_CLERK         3300                       121            50
+        130 Mozhe                Atkinson                  MATKINSO                  650.124.6234         30-10-97 ST_CLERK         2800                       121            50
+        131 James                Marlow                    JAMRLOW                   650.124.7234         16-02-97 ST_CLERK         2500                       121            50
+        132 TJ                   Olson                     TJOLSON                   650.124.8234         10-04-99 ST_CLERK         2100                       121            50
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME                 EMAIL                     PHONE_NUMBER         HIRE_DAT JOB_ID         SALARY COMMISSION_PCT MANAGER_ID DEPARTMENT_ID
+----------- -------------------- ------------------------- ------------------------- -------------------- -------- ---------- ---------- -------------- ---------- -------------
+        133 Jason                Mallin                    JMALLIN                   650.127.1934         14-06-96 ST_CLERK         3300                       122            50
+        134 Michael              Rogers                    MROGERS                   650.127.1834         26-08-98 ST_CLERK         2900                       122            50
+        135 Ki                   Gee                       KGEE                      650.127.1734         12-12-99 ST_CLERK         2400                       122            50
+        136 Hazel                Philtanker                HPHILTAN                  650.127.1634         06-02-00 ST_CLERK         2200                       122            50
+        137 Renske               Ladwig                    RLADWIG                   650.121.1234         14-07-95 ST_CLERK         3600                       123            50
+        138 Stephen              Stiles                    SSTILES                   650.121.2034         26-10-97 ST_CLERK         3200                       123            50
+        139 John                 Seo                       JSEO                      650.121.2019         12-02-98 ST_CLERK         2700                       123            50
+        140 Joshua               Patel                     JPATEL                    650.121.1834         06-04-98 ST_CLERK         2500                       123            50
+        141 Trenna               Rajs                      TRAJS                     650.121.8009         17-10-95 ST_CLERK         3500                       124            50
+        142 Curtis               Davies                    CDAVIES                   650.121.2994         29-01-97 ST_CLERK         3100                       124            50
+        143 Randall              Matos                     RMATOS                    650.121.2874         15-03-98 ST_CLERK         2600                       124            50
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME                 EMAIL                     PHONE_NUMBER         HIRE_DAT JOB_ID         SALARY COMMISSION_PCT MANAGER_ID DEPARTMENT_ID
+----------- -------------------- ------------------------- ------------------------- -------------------- -------- ---------- ---------- -------------- ---------- -------------
+        144 Peter                Vargas                    PVARGAS                   650.121.2004         09-07-98 ST_CLERK         2500                       124            50
+        145 John                 Russell                   JRUSSEL                   011.44.1344.429268   01-10-96 SA_MAN          14000             .4        100            80
+        146 Karen                Partners                  KPARTNER                  011.44.1344.467268   05-01-97 SA_MAN          13500             .3        100            80
+        147 Alberto              Errazuriz                 AERRAZUR                  011.44.1344.429278   10-03-97 SA_MAN          12000             .3        100            80
+        148 Gerald               Cambrault                 GCAMBRAU                  011.44.1344.619268   15-10-99 SA_MAN          11000             .3        100            80
+        149 Eleni                Zlotkey                   EZLOTKEY                  011.44.1344.429018   29-01-00 SA_MAN          10500             .2        100            80
+        150 Peter                Tucker                    PTUCKER                   011.44.1344.129268   30-01-97 SA_REP          10000             .3        145            80
+        151 David                Bernstein                 DBERNSTE                  011.44.1344.345268   24-03-97 SA_REP           9500            .25        145            80
+        152 Peter                Hall                      PHALL                     011.44.1344.478968   20-08-97 SA_REP           9000            .25        145            80
+        153 Christopher          Olsen                     COLSEN                    011.44.1344.498718   30-03-98 SA_REP           8000             .2        145            80
+        154 Nanette              Cambrault                 NCAMBRAU                  011.44.1344.987668   09-12-98 SA_REP           7500             .2        145            80
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME                 EMAIL                     PHONE_NUMBER         HIRE_DAT JOB_ID         SALARY COMMISSION_PCT MANAGER_ID DEPARTMENT_ID
+----------- -------------------- ------------------------- ------------------------- -------------------- -------- ---------- ---------- -------------- ---------- -------------
+        155 Oliver               Tuvault                   OTUVAULT                  011.44.1344.486508   23-11-99 SA_REP           7000            .15        145            80
+        156 Janette              King                      JKING                     011.44.1345.429268   30-01-96 SA_REP          10000            .35        146            80
+        157 Patrick              Sully                     PSULLY                    011.44.1345.929268   04-03-96 SA_REP           9500            .35        146            80
+        158 Allan                McEwen                    AMCEWEN                   011.44.1345.829268   01-08-96 SA_REP           9000            .35        146            80
+        159 Lindsey              Smith                     LSMITH                    011.44.1345.729268   10-03-97 SA_REP           8000             .3        146            80
+        160 Louise               Doran                     LDORAN                    011.44.1345.629268   15-12-97 SA_REP           7500             .3        146            80
+        161 Sarath               Sewall                    SSEWALL                   011.44.1345.529268   03-11-98 SA_REP           7000            .25        146            80
+        162 Clara                Vishney                   CVISHNEY                  011.44.1346.129268   11-11-97 SA_REP          10500            .25        147            80
+        163 Danielle             Greene                    DGREENE                   011.44.1346.229268   19-03-99 SA_REP           9500            .15        147            80
+        164 Mattea               Marvins                   MMARVINS                  011.44.1346.329268   24-01-00 SA_REP           7200             .1        147            80
+        165 David                Lee                       DLEE                      011.44.1346.529268   23-02-00 SA_REP           6800             .1        147            80
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME                 EMAIL                     PHONE_NUMBER         HIRE_DAT JOB_ID         SALARY COMMISSION_PCT MANAGER_ID DEPARTMENT_ID
+----------- -------------------- ------------------------- ------------------------- -------------------- -------- ---------- ---------- -------------- ---------- -------------
+        166 Sundar               Ande                      SANDE                     011.44.1346.629268   24-03-00 SA_REP           6400             .1        147            80
+        167 Amit                 Banda                     ABANDA                    011.44.1346.729268   21-04-00 SA_REP           6200             .1        147            80
+        168 Lisa                 Ozer                      LOZER                     011.44.1343.929268   11-03-97 SA_REP          11500            .25        148            80
+        169 Harrison             Bloom                     HBLOOM                    011.44.1343.829268   23-03-98 SA_REP          10000             .2        148            80
+        170 Tayler               Fox                       TFOX                      011.44.1343.729268   24-01-98 SA_REP           9600             .2        148            80
+        171 William              Smith                     WSMITH                    011.44.1343.629268   23-02-99 SA_REP           7400            .15        148            80
+        172 Elizabeth            Bates                     EBATES                    011.44.1343.529268   24-03-99 SA_REP           7300            .15        148            80
+        173 Sundita              Kumar                     SKUMAR                    011.44.1343.329268   21-04-00 SA_REP           6100             .1        148            80
+        174 Ellen                Abel                      EABEL                     011.44.1644.429267   11-05-96 SA_REP          11000             .3        149            80
+        175 Alyssa               Hutton                    AHUTTON                   011.44.1644.429266   19-03-97 SA_REP           8800            .25        149            80
+        176 Jonathon             Taylor                    JTAYLOR                   011.44.1644.429265   24-03-98 SA_REP           8600             .2        149            80
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME                 EMAIL                     PHONE_NUMBER         HIRE_DAT JOB_ID         SALARY COMMISSION_PCT MANAGER_ID DEPARTMENT_ID
+----------- -------------------- ------------------------- ------------------------- -------------------- -------- ---------- ---------- -------------- ---------- -------------
+        177 Jack                 Livingston                JLIVINGS                  011.44.1644.429264   23-04-98 SA_REP           8400             .2        149            80
+        178 Kimberely            Grant                     KGRANT                    011.44.1644.429263   24-05-99 SA_REP           7000            .15        149              
+        179 Charles              Johnson                   CJOHNSON                  011.44.1644.429262   04-01-00 SA_REP           6200             .1        149            80
+        180 Winston              Taylor                    WTAYLOR                   650.507.9876         24-01-98 SH_CLERK         3200                       120            50
+        181 Jean                 Fleaur                    JFLEAUR                   650.507.9877         23-02-98 SH_CLERK         3100                       120            50
+        182 Martha               Sullivan                  MSULLIVA                  650.507.9878         21-06-99 SH_CLERK         2500                       120            50
+        183 Girard               Geoni                     GGEONI                    650.507.9879         03-02-00 SH_CLERK         2800                       120            50
+        184 Nandita              Sarchand                  NSARCHAN                  650.509.1876         27-01-96 SH_CLERK         4200                       121            50
+        185 Alexis               Bull                      ABULL                     650.509.2876         20-02-97 SH_CLERK         4100                       121            50
+        186 Julia                Dellinger                 JDELLING                  650.509.3876         24-06-98 SH_CLERK         3400                       121            50
+        187 Anthony              Cabrio                    ACABRIO                   650.509.4876         07-02-99 SH_CLERK         3000                       121            50
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME                 EMAIL                     PHONE_NUMBER         HIRE_DAT JOB_ID         SALARY COMMISSION_PCT MANAGER_ID DEPARTMENT_ID
+----------- -------------------- ------------------------- ------------------------- -------------------- -------- ---------- ---------- -------------- ---------- -------------
+        188 Kelly                Chung                     KCHUNG                    650.505.1876         14-06-97 SH_CLERK         3800                       122            50
+        189 Jennifer             Dilly                     JDILLY                    650.505.2876         13-08-97 SH_CLERK         3600                       122            50
+        190 Timothy              Gates                     TGATES                    650.505.3876         11-07-98 SH_CLERK         2900                       122            50
+        191 Randall              Perkins                   RPERKINS                  650.505.4876         19-12-99 SH_CLERK         2500                       122            50
+        192 Sarah                Bell                      SBELL                     650.501.1876         04-02-96 SH_CLERK         4000                       123            50
+        193 Britney              Everett                   BEVERETT                  650.501.2876         03-03-97 SH_CLERK         3900                       123            50
+        194 Samuel               McCain                    SMCCAIN                   650.501.3876         01-07-98 SH_CLERK         3200                       123            50
+        195 Vance                Jones                     VJONES                    650.501.4876         17-03-99 SH_CLERK         2800                       123            50
+        196 Alana                Walsh                     AWALSH                    650.507.9811         24-04-98 SH_CLERK         3100                       124            50
+        197 Kevin                Feeney                    KFEENEY                   650.507.9822         23-05-98 SH_CLERK         3000                       124            50
+        198 Donald               OConnell                  DOCONNEL                  650.507.9833         21-06-99 SH_CLERK         2600                       124            50
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME                 EMAIL                     PHONE_NUMBER         HIRE_DAT JOB_ID         SALARY COMMISSION_PCT MANAGER_ID DEPARTMENT_ID
+----------- -------------------- ------------------------- ------------------------- -------------------- -------- ---------- ---------- -------------- ---------- -------------
+        199 Douglas              Grant                     DGRANT                    650.507.9844         13-01-00 SH_CLERK         2600                       124            50
+        200 Jennifer             Whalen                    JWHALEN                   515.123.4444         17-09-87 AD_ASST          4400                       101            10
+        201 Michael              Hartstein                 MHARTSTE                  515.123.5555         17-02-96 MK_MAN          13000                       100            20
+        202 Pat                  Fay                       PFAY                      603.123.6666         17-08-97 MK_REP           6000                       201            20
+        203 Susan                Mavris                    SMAVRIS                   515.123.7777         07-06-94 HR_REP           6500                       101            40
+        204 Hermann              Baer                      HBAER                     515.123.8888         07-06-94 PR_REP          10000                       101            70
+        205 Shelley              Higgins                   SHIGGINS                  515.123.8080         07-06-94 AC_MGR          12000                       101           110
+        206 William              Gietz                     WGIETZ                    515.123.8181         07-06-94 AC_ACCOUNT       8300                       205           110
+
+107 rows selected. 
+
+
+EMPLOYEE_ID START_DA END_DATE JOB_ID     DEPARTMENT_ID
+----------- -------- -------- ---------- -------------
+        102 13-01-93 24-07-98 IT_PROG               60
+        101 21-09-89 27-10-93 AC_ACCOUNT           110
+        101 28-10-93 15-03-97 AC_MGR               110
+        201 17-02-96 19-12-99 MK_REP                20
+        114 24-03-98 31-12-99 ST_CLERK              50
+        122 01-01-99 31-12-99 ST_CLERK              50
+        200 17-09-87 17-06-93 AD_ASST               90
+        176 24-03-98 31-12-98 SA_REP                80
+        176 01-01-99 31-12-99 SA_MAN                80
+        200 01-07-94 31-12-98 AC_ACCOUNT            90
+
+10 rows selected. 
+
+
+ REGION_ID REGION_NAME              
+---------- -------------------------
+         1 Europe                   
+         2 Americas                 
+         3 Asia                     
+         4 Middle East and Africa   
+
+
+CO COUNTRY_NAME                              REGION_ID
+-- ---------------------------------------- ----------
+AR Argentina                                         2
+AU Australia                                         3
+BE Belgium                                           1
+BR Brazil                                            2
+CA Canada                                            2
+CH Switzerland                                       1
+CN China                                             3
+DE Germany                                           1
+DK Denmark                                           1
+EG Egypt                                             4
+FR France                                            1
+
+CO COUNTRY_NAME                              REGION_ID
+-- ---------------------------------------- ----------
+HK HongKong                                          3
+IL Israel                                            4
+IN India                                             3
+IT Italy                                             1
+JP Japan                                             3
+KW Kuwait                                            4
+MX Mexico                                            2
+NG Nigeria                                           4
+NL Netherlands                                       1
+SG Singapore                                         3
+UK United Kingdom                                    1
+
+CO COUNTRY_NAME                              REGION_ID
+-- ---------------------------------------- ----------
+US United States of America                          2
+ZM Zambia                                            4
+ZW Zimbabwe                                          4
+
+25 rows selected. 
+
+
+LOCATION_ID POSTAL_CODE CITY                           CO
+----------- ----------- ------------------------------ --
+       1000      411007 PUNE                           IN
+       1001      495442 RATANPUR                       IN
+       1002      110001 DELHI                          IN
+       1003         989 Roma                           IT
+       1004       10934 Venice                         IT
+       1005        1689 Tokyo                          JP
+
+6 rows selected. 
+
+
+CO   COUNT(*) COUNT(STATE_PROVINCE)
+-- ---------- ---------------------
+AU          1                     1
+BR          1                     1
+CA          2                     2
+CH          2                     2
+CN          1                     0
+DE          1                     1
+IN          1                     1
+IT          2                     0
+JP          2                     1
+MX          1                     1
+NL          1                     1
+
+CO   COUNT(*) COUNT(STATE_PROVINCE)
+-- ---------- ---------------------
+SG          1                     0
+UK          3                     2
+US          4                     4
+
+14 rows selected. 
+
+
+DEPARTMENT_NAME                  COUNT(*) COUNT(E.MANAGER_ID)
+------------------------------ ---------- -------------------
+Accounting                              2                   2
+Administration                          1                   1
+Executive                               3                   2
+Finance                                 6                   6
+Human Resources                         1                   1
+IT                                      5                   5
+Marketing                               2                   2
+Public Relations                        1                   1
+Purchasing                              6                   6
+Sales                                  34                  34
+Shipping                               45                  45
+
+11 rows selected. 
+
+
+HIRE_DAT COUNT(EMPLOYEE_ID)
+-------- ------------------
+17-06-87                  1
+21-09-89                  1
+13-01-93                  1
+03-01-90                  1
+21-05-91                  1
+25-06-97                  1
+05-02-98                  1
+07-02-99                  2
+17-08-94                  1
+16-08-94                  1
+28-09-97                  1
+
+HIRE_DAT COUNT(EMPLOYEE_ID)
+-------- ------------------
+30-09-97                  1
+07-03-98                  1
+07-12-99                  1
+07-12-94                  1
+18-05-95                  1
+24-12-97                  1
+24-07-97                  1
+15-11-98                  1
+10-08-99                  1
+18-07-96                  1
+10-04-97                  1
+
+HIRE_DAT COUNT(EMPLOYEE_ID)
+-------- ------------------
+01-05-95                  1
+10-10-97                  1
+16-11-99                  1
+16-07-97                  1
+28-09-98                  1
+14-01-99                  1
+08-03-00                  1
+20-08-97                  2
+30-10-97                  1
+16-02-97                  1
+10-04-99                  1
+
+HIRE_DAT COUNT(EMPLOYEE_ID)
+-------- ------------------
+14-06-96                  1
+26-08-98                  1
+12-12-99                  1
+06-02-00                  1
+14-07-95                  1
+26-10-97                  1
+12-02-98                  1
+06-04-98                  1
+17-10-95                  1
+29-01-97                  1
+15-03-98                  1
+
+HIRE_DAT COUNT(EMPLOYEE_ID)
+-------- ------------------
+09-07-98                  1
+01-10-96                  1
+05-01-97                  1
+10-03-97                  2
+15-10-99                  1
+29-01-00                  1
+30-01-97                  1
+24-03-97                  1
+30-03-98                  1
+09-12-98                  1
+23-11-99                  1
+
+HIRE_DAT COUNT(EMPLOYEE_ID)
+-------- ------------------
+30-01-96                  1
+04-03-96                  1
+01-08-96                  1
+15-12-97                  1
+03-11-98                  1
+11-11-97                  1
+19-03-99                  1
+24-01-00                  1
+23-02-00                  1
+24-03-00                  1
+21-04-00                  2
+
+HIRE_DAT COUNT(EMPLOYEE_ID)
+-------- ------------------
+11-03-97                  1
+23-03-98                  1
+24-01-98                  2
+23-02-99                  1
+24-03-99                  1
+11-05-96                  1
+19-03-97                  1
+24-03-98                  1
+23-04-98                  1
+24-05-99                  1
+04-01-00                  1
+
+HIRE_DAT COUNT(EMPLOYEE_ID)
+-------- ------------------
+23-02-98                  1
+21-06-99                  2
+03-02-00                  1
+27-01-96                  1
+20-02-97                  1
+24-06-98                  1
+14-06-97                  1
+13-08-97                  1
+11-07-98                  1
+19-12-99                  1
+04-02-96                  1
+
+HIRE_DAT COUNT(EMPLOYEE_ID)
+-------- ------------------
+03-03-97                  1
+01-07-98                  1
+17-03-99                  1
+24-04-98                  1
+23-05-98                  1
+13-01-00                  1
+17-09-87                  1
+17-02-96                  1
+17-08-97                  1
+07-06-94                  4
+
+98 rows selected. 
+
+
+EMPLOYEE_NAME                                  HIRE_DAT HIRE_DATE_CATEGORY   
+---------------------------------------------- -------- ---------------------
+Steven King                                    17-06-87 Before 1990          
+Jennifer Whalen                                17-09-87 Before 1990          
+Neena Kochhar                                  21-09-89 Before 1990          
+Alexander Hunold                               03-01-90 Between 1990 and 1995
+Bruce Ernst                                    21-05-91 Between 1990 and 1995
+Lex De Haan                                    13-01-93 Between 1990 and 1995
+Susan Mavris                                   07-06-94 Between 1990 and 1995
+Hermann Baer                                   07-06-94 Between 1990 and 1995
+Shelley Higgins                                07-06-94 Between 1990 and 1995
+William Gietz                                  07-06-94 Between 1990 and 1995
+Daniel Faviet                                  16-08-94 Between 1990 and 1995
+
+EMPLOYEE_NAME                                  HIRE_DAT HIRE_DATE_CATEGORY   
+---------------------------------------------- -------- ---------------------
+Nancy Greenberg                                17-08-94 Between 1990 and 1995
+Den Raphaely                                   07-12-94 Between 1990 and 1995
+Payam Kaufling                                 01-05-95 Between 1995 and 2000
+Alexander Khoo                                 18-05-95 Between 1995 and 2000
+Renske Ladwig                                  14-07-95 Between 1995 and 2000
+Trenna Rajs                                    17-10-95 Between 1995 and 2000
+Nandita Sarchand                               27-01-96 Between 1995 and 2000
+Janette King                                   30-01-96 Between 1995 and 2000
+Sarah Bell                                     04-02-96 Between 1995 and 2000
+Michael Hartstein                              17-02-96 Between 1995 and 2000
+Patrick Sully                                  04-03-96 Between 1995 and 2000
+
+EMPLOYEE_NAME                                  HIRE_DAT HIRE_DATE_CATEGORY   
+---------------------------------------------- -------- ---------------------
+Ellen Abel                                     11-05-96 Between 1995 and 2000
+Jason Mallin                                   14-06-96 Between 1995 and 2000
+Matthew Weiss                                  18-07-96 Between 1995 and 2000
+Allan McEwen                                   01-08-96 Between 1995 and 2000
+John Russell                                   01-10-96 Between 1995 and 2000
+Karen Partners                                 05-01-97 Between 1995 and 2000
+Curtis Davies                                  29-01-97 Between 1995 and 2000
+Peter Tucker                                   30-01-97 Between 1995 and 2000
+James Marlow                                   16-02-97 Between 1995 and 2000
+Alexis Bull                                    20-02-97 Between 1995 and 2000
+Britney Everett                                03-03-97 Between 1995 and 2000
+
+EMPLOYEE_NAME                                  HIRE_DAT HIRE_DATE_CATEGORY   
+---------------------------------------------- -------- ---------------------
+Lindsey Smith                                  10-03-97 Between 1995 and 2000
+Alberto Errazuriz                              10-03-97 Between 1995 and 2000
+Lisa Ozer                                      11-03-97 Between 1995 and 2000
+Alyssa Hutton                                  19-03-97 Between 1995 and 2000
+David Bernstein                                24-03-97 Between 1995 and 2000
+Adam Fripp                                     10-04-97 Between 1995 and 2000
+Kelly Chung                                    14-06-97 Between 1995 and 2000
+David Austin                                   25-06-97 Between 1995 and 2000
+Julia Nayer                                    16-07-97 Between 1995 and 2000
+Sigal Tobias                                   24-07-97 Between 1995 and 2000
+Jennifer Dilly                                 13-08-97 Between 1995 and 2000
+
+EMPLOYEE_NAME                                  HIRE_DAT HIRE_DATE_CATEGORY   
+---------------------------------------------- -------- ---------------------
+Pat Fay                                        17-08-97 Between 1995 and 2000
+Laura Bissot                                   20-08-97 Between 1995 and 2000
+Peter Hall                                     20-08-97 Between 1995 and 2000
+John Chen                                      28-09-97 Between 1995 and 2000
+Ismael Sciarra                                 30-09-97 Between 1995 and 2000
+Shanta Vollman                                 10-10-97 Between 1995 and 2000
+Stephen Stiles                                 26-10-97 Between 1995 and 2000
+Mozhe Atkinson                                 30-10-97 Between 1995 and 2000
+Clara Vishney                                  11-11-97 Between 1995 and 2000
+Louise Doran                                   15-12-97 Between 1995 and 2000
+Shelli Baida                                   24-12-97 Between 1995 and 2000
+
+EMPLOYEE_NAME                                  HIRE_DAT HIRE_DATE_CATEGORY   
+---------------------------------------------- -------- ---------------------
+Tayler Fox                                     24-01-98 Between 1995 and 2000
+Winston Taylor                                 24-01-98 Between 1995 and 2000
+Valli Pataballa                                05-02-98 Between 1995 and 2000
+John Seo                                       12-02-98 Between 1995 and 2000
+Jean Fleaur                                    23-02-98 Between 1995 and 2000
+Jose Manuel Urman                              07-03-98 Between 1995 and 2000
+Randall Matos                                  15-03-98 Between 1995 and 2000
+Harrison Bloom                                 23-03-98 Between 1995 and 2000
+Jonathon Taylor                                24-03-98 Between 1995 and 2000
+Christopher Olsen                              30-03-98 Between 1995 and 2000
+Joshua Patel                                   06-04-98 Between 1995 and 2000
+
+EMPLOYEE_NAME                                  HIRE_DAT HIRE_DATE_CATEGORY   
+---------------------------------------------- -------- ---------------------
+Jack Livingston                                23-04-98 Between 1995 and 2000
+Alana Walsh                                    24-04-98 Between 1995 and 2000
+Kevin Feeney                                   23-05-98 Between 1995 and 2000
+Julia Dellinger                                24-06-98 Between 1995 and 2000
+Samuel McCain                                  01-07-98 Between 1995 and 2000
+Peter Vargas                                   09-07-98 Between 1995 and 2000
+Timothy Gates                                  11-07-98 Between 1995 and 2000
+Michael Rogers                                 26-08-98 Between 1995 and 2000
+Irene Mikkilineni                              28-09-98 Between 1995 and 2000
+Sarath Sewall                                  03-11-98 Between 1995 and 2000
+Guy Himuro                                     15-11-98 Between 1995 and 2000
+
+EMPLOYEE_NAME                                  HIRE_DAT HIRE_DATE_CATEGORY   
+---------------------------------------------- -------- ---------------------
+Nanette Cambrault                              09-12-98 Between 1995 and 2000
+James Landry                                   14-01-99 Between 1995 and 2000
+Anthony Cabrio                                 07-02-99 Between 1995 and 2000
+Diana Lorentz                                  07-02-99 Between 1995 and 2000
+William Smith                                  23-02-99 Between 1995 and 2000
+Vance Jones                                    17-03-99 Between 1995 and 2000
+Danielle Greene                                19-03-99 Between 1995 and 2000
+Elizabeth Bates                                24-03-99 Between 1995 and 2000
+TJ Olson                                       10-04-99 Between 1995 and 2000
+Kimberely Grant                                24-05-99 Between 1995 and 2000
+Donald OConnell                                21-06-99 Between 1995 and 2000
+
+EMPLOYEE_NAME                                  HIRE_DAT HIRE_DATE_CATEGORY   
+---------------------------------------------- -------- ---------------------
+Martha Sullivan                                21-06-99 Between 1995 and 2000
+Karen Colmenares                               10-08-99 Between 1995 and 2000
+Gerald Cambrault                               15-10-99 Between 1995 and 2000
+Kevin Mourgos                                  16-11-99 Between 1995 and 2000
+Oliver Tuvault                                 23-11-99 Between 1995 and 2000
+Luis Popp                                      07-12-99 Between 1995 and 2000
+Ki Gee                                         12-12-99 Between 1995 and 2000
+Randall Perkins                                19-12-99 Between 1995 and 2000
+Charles Johnson                                04-01-00 After 2000           
+Douglas Grant                                  13-01-00 After 2000           
+Mattea Marvins                                 24-01-00 After 2000           
+
+EMPLOYEE_NAME                                  HIRE_DAT HIRE_DATE_CATEGORY   
+---------------------------------------------- -------- ---------------------
+Eleni Zlotkey                                  29-01-00 After 2000           
+Girard Geoni                                   03-02-00 After 2000           
+Hazel Philtanker                               06-02-00 After 2000           
+David Lee                                      23-02-00 After 2000           
+Steven Markle                                  08-03-00 After 2000           
+Sundar Ande                                    24-03-00 After 2000           
+Amit Banda                                     21-04-00 After 2000           
+Sundita Kumar                                  21-04-00 After 2000           
+
+107 rows selected. 
+
+
+EMPLOYEE_ID     SALARY AVG_SALARY
+----------- ---------- ----------
+        100      24000    6461.68
+        101      17000    6461.68
+        102      17000    6461.68
+        103       9000    6461.68
+        108      12000    6461.68
+        109       9000    6461.68
+        110       8200    6461.68
+        111       7700    6461.68
+        112       7800    6461.68
+        113       6900    6461.68
+        114      11000    6461.68
+
+EMPLOYEE_ID     SALARY AVG_SALARY
+----------- ---------- ----------
+        120       8000    6461.68
+        121       8200    6461.68
+        122       7900    6461.68
+        123       6500    6461.68
+        145      14000    6461.68
+        146      13500    6461.68
+        147      12000    6461.68
+        148      11000    6461.68
+        149      10500    6461.68
+        150      10000    6461.68
+        151       9500    6461.68
+
+EMPLOYEE_ID     SALARY AVG_SALARY
+----------- ---------- ----------
+        152       9000    6461.68
+        153       8000    6461.68
+        154       7500    6461.68
+        155       7000    6461.68
+        156      10000    6461.68
+        157       9500    6461.68
+        158       9000    6461.68
+        159       8000    6461.68
+        160       7500    6461.68
+        161       7000    6461.68
+        162      10500    6461.68
+
+EMPLOYEE_ID     SALARY AVG_SALARY
+----------- ---------- ----------
+        163       9500    6461.68
+        164       7200    6461.68
+        165       6800    6461.68
+        168      11500    6461.68
+        169      10000    6461.68
+        170       9600    6461.68
+        171       7400    6461.68
+        172       7300    6461.68
+        174      11000    6461.68
+        175       8800    6461.68
+        176       8600    6461.68
+
+EMPLOYEE_ID     SALARY AVG_SALARY
+----------- ---------- ----------
+        177       8400    6461.68
+        178       7000    6461.68
+        201      13000    6461.68
+        203       6500    6461.68
+        204      10000    6461.68
+        205      12000    6461.68
+        206       8300    6461.68
+
+51 rows selected. 
+
+
+EMPLOYEE_ID     SALARY AVG_SALARY
+----------- ---------- ----------
+        100      24000    6461.68
+        101      17000    6461.68
+        102      17000    6461.68
+        103       9000    6461.68
+        108      12000    6461.68
+        109       9000    6461.68
+        110       8200    6461.68
+        111       7700    6461.68
+        112       7800    6461.68
+        113       6900    6461.68
+        114      11000    6461.68
+
+EMPLOYEE_ID     SALARY AVG_SALARY
+----------- ---------- ----------
+        120       8000    6461.68
+        121       8200    6461.68
+        122       7900    6461.68
+        123       6500    6461.68
+        145      14000    6461.68
+        146      13500    6461.68
+        147      12000    6461.68
+        148      11000    6461.68
+        149      10500    6461.68
+        150      10000    6461.68
+        151       9500    6461.68
+
+EMPLOYEE_ID     SALARY AVG_SALARY
+----------- ---------- ----------
+        152       9000    6461.68
+        153       8000    6461.68
+        154       7500    6461.68
+        155       7000    6461.68
+        156      10000    6461.68
+        157       9500    6461.68
+        158       9000    6461.68
+        159       8000    6461.68
+        160       7500    6461.68
+        161       7000    6461.68
+        162      10500    6461.68
+
+EMPLOYEE_ID     SALARY AVG_SALARY
+----------- ---------- ----------
+        163       9500    6461.68
+        164       7200    6461.68
+        165       6800    6461.68
+        168      11500    6461.68
+        169      10000    6461.68
+        170       9600    6461.68
+        171       7400    6461.68
+        172       7300    6461.68
+        174      11000    6461.68
+        175       8800    6461.68
+        176       8600    6461.68
+
+EMPLOYEE_ID     SALARY AVG_SALARY
+----------- ---------- ----------
+        177       8400    6461.68
+        178       7000    6461.68
+        201      13000    6461.68
+        203       6500    6461.68
+        204      10000    6461.68
+        205      12000    6461.68
+        206       8300    6461.68
+
+51 rows selected. 
+
+
+DEPARTMENT_ID TOTAL_SAL_DEPT_WISE AVG_SALARY_FROM_ALL_DEPT
+------------- ------------------- ------------------------
+           20               19000                  6461.68
+           30               24900                  6461.68
+           40                6500                  6461.68
+           50              156400                  6461.68
+           60               28800                  6461.68
+           70               10000                  6461.68
+           80              304500                  6461.68
+           90               58000                  6461.68
+          100               51600                  6461.68
+          110               20300                  6461.68
+                             7000                  6461.68
+
+11 rows selected. 
+
+
+DEPARTMENT_ID DEPARTMENT_NAME                MANAGER_NAME                                   CITY                           MAX_SALARY MIN_SALARY AVG_SALARY NUM_OF_EMPLOYEES TOTAL_SALARY NUM_OF_EMPLOYEES_RESIGNED
+------------- ------------------------------ ---------------------------------------------- ------------------------------ ---------- ---------- ---------- ---------------- ------------ -------------------------
+           10 Administration                 Jennifer Whalen                                Seattle                              4400       4400       4400                1         4400                          
+           20 Marketing                      Michael Hartstein                              Toronto                             13000       6000       9500                2        19000                         1
+           30 Purchasing                     Den Raphaely                                   Seattle                             11000       2500       4150                6        24900                          
+           40 Human Resources                Susan Mavris                                   London                               6500       6500       6500                1         6500                          
+           50 Shipping                       Adam Fripp                                     South San Francisco                  8200       2100    3475.56               45       156400                         2
+           60 IT                             Alexander Hunold                               Southlake                            9000       4200       5760                5        28800                         1
+           70 Public Relations               Hermann Baer                                   Munich                              10000      10000      10000                1        10000                          
+           80 Sales                          John Russell                                   Oxford                              14000       6100    8955.88               34       304500                         2
+           90 Executive                      Steven King                                    Seattle                             24000      17000   19333.33                3        58000                         2
+          100 Finance                        Nancy Greenberg                                Seattle                             12000       6900       8600                6        51600                          
+          110 Accounting                     Shelley Higgins                                Seattle                             12000       8300      10150                2        20300                         2
+
+DEPARTMENT_ID DEPARTMENT_NAME                MANAGER_NAME                                   CITY                           MAX_SALARY MIN_SALARY AVG_SALARY NUM_OF_EMPLOYEES TOTAL_SALARY NUM_OF_EMPLOYEES_RESIGNED
+------------- ------------------------------ ---------------------------------------------- ------------------------------ ---------- ---------- ---------- ---------------- ------------ -------------------------
+          120 Treasury                                                                      Seattle                                                                                                                
+          130 Corporate Tax                                                                 Seattle                                                                                                                
+          140 Control And Credit                                                            Seattle                                                                                                                
+          150 Shareholder Services                                                          Seattle                                                                                                                
+          160 Benefits                                                                      Seattle                                                                                                                
+          170 Manufacturing                                                                 Seattle                                                                                                                
+          180 Construction                                                                  Seattle                                                                                                                
+          190 Contracting                                                                   Seattle                                                                                                                
+          200 Operations                                                                    Seattle                                                                                                                
+          210 IT Support                                                                    Seattle                                                                                                                
+          220 NOC                                                                           Seattle                                                                                                                
+
+DEPARTMENT_ID DEPARTMENT_NAME                MANAGER_NAME                                   CITY                           MAX_SALARY MIN_SALARY AVG_SALARY NUM_OF_EMPLOYEES TOTAL_SALARY NUM_OF_EMPLOYEES_RESIGNED
+------------- ------------------------------ ---------------------------------------------- ------------------------------ ---------- ---------- ---------- ---------------- ------------ -------------------------
+          230 IT Helpdesk                                                                   Seattle                                                                                                                
+          240 Government Sales                                                              Seattle                                                                                                                
+          250 Retail Sales                                                                  Seattle                                                                                                                
+          260 Recruiting                                                                    Seattle                                                                                                                
+          270 Payroll                                                                       Seattle                                                                                                                
+
+27 rows selected. 
+
+
+DEPARTMENT_ID DEPARTMENT_NAME                MANAGER_NAME                                   CITY                           MAX_SALARY MIN_SALARY AVG_SALARY NUM_OF_EMPLOYEES TOTAL_SALARY NUM_OF_EMPLOYEES_RESIGNED
+------------- ------------------------------ ---------------------------------------------- ------------------------------ ---------- ---------- ---------- ---------------- ------------ -------------------------
+           10 Administration                 Jennifer Whalen                                Seattle                              4400       4400       4400                1         4400                          
+           20 Marketing                      Michael Hartstein                              Toronto                             13000       6000       9500                2        19000                         1
+           30 Purchasing                     Den Raphaely                                   Seattle                             11000       2500       4150                6        24900                          
+           40 Human Resources                Susan Mavris                                   London                               6500       6500       6500                1         6500                          
+           50 Shipping                       Adam Fripp                                     South San Francisco                  8200       2100    3475.56               45       156400                         2
+           60 IT                             Alexander Hunold                               Southlake                            9000       4200       5760                5        28800                         1
+           70 Public Relations               Hermann Baer                                   Munich                              10000      10000      10000                1        10000                          
+           80 Sales                          John Russell                                   Oxford                              14000       6100    8955.88               34       304500                         2
+           90 Executive                      Steven King                                    Seattle                             24000      17000   19333.33                3        58000                         2
+          100 Finance                        Nancy Greenberg                                Seattle                             12000       6900       8600                6        51600                          
+          110 Accounting                     Shelley Higgins                                Seattle                             12000       8300      10150                2        20300                         2
+
+DEPARTMENT_ID DEPARTMENT_NAME                MANAGER_NAME                                   CITY                           MAX_SALARY MIN_SALARY AVG_SALARY NUM_OF_EMPLOYEES TOTAL_SALARY NUM_OF_EMPLOYEES_RESIGNED
+------------- ------------------------------ ---------------------------------------------- ------------------------------ ---------- ---------- ---------- ---------------- ------------ -------------------------
+          120 Treasury                                                                      Seattle                                                                                                                
+          130 Corporate Tax                                                                 Seattle                                                                                                                
+          140 Control And Credit                                                            Seattle                                                                                                                
+          150 Shareholder Services                                                          Seattle                                                                                                                
+          160 Benefits                                                                      Seattle                                                                                                                
+          170 Manufacturing                                                                 Seattle                                                                                                                
+          180 Construction                                                                  Seattle                                                                                                                
+          190 Contracting                                                                   Seattle                                                                                                                
+          200 Operations                                                                    Seattle                                                                                                                
+          210 IT Support                                                                    Seattle                                                                                                                
+          220 NOC                                                                           Seattle                                                                                                                
+
+DEPARTMENT_ID DEPARTMENT_NAME                MANAGER_NAME                                   CITY                           MAX_SALARY MIN_SALARY AVG_SALARY NUM_OF_EMPLOYEES TOTAL_SALARY NUM_OF_EMPLOYEES_RESIGNED
+------------- ------------------------------ ---------------------------------------------- ------------------------------ ---------- ---------- ---------- ---------------- ------------ -------------------------
+          230 IT Helpdesk                                                                   Seattle                                                                                                                
+          240 Government Sales                                                              Seattle                                                                                                                
+          250 Retail Sales                                                                  Seattle                                                                                                                
+          260 Recruiting                                                                    Seattle                                                                                                                
+          270 Payroll                                                                       Seattle                                                                                                                
+
+27 rows selected. 
+
+
+View DEPT_DETAILS_VIEW created.
+
+
+DEPARTMENT_ID DEPARTMENT_NAME                MANAGER_NAME                                   CITY                           MAX_SALARY MIN_SALARY AVG_SALARY NUM_OF_EMPLOYEES TOTAL_SALARY NUM_OF_EMPLOYEES_RESIGNED
+------------- ------------------------------ ---------------------------------------------- ------------------------------ ---------- ---------- ---------- ---------------- ------------ -------------------------
+           10 Administration                 Jennifer Whalen                                Seattle                              4400       4400       4400                1         4400                          
+           20 Marketing                      Michael Hartstein                              Toronto                             13000       6000       9500                2        19000                         1
+           30 Purchasing                     Den Raphaely                                   Seattle                             11000       2500       4150                6        24900                          
+           40 Human Resources                Susan Mavris                                   London                               6500       6500       6500                1         6500                          
+           50 Shipping                       Adam Fripp                                     South San Francisco                  8200       2100    3475.56               45       156400                         2
+           60 IT                             Alexander Hunold                               Southlake                            9000       4200       5760                5        28800                         1
+           70 Public Relations               Hermann Baer                                   Munich                              10000      10000      10000                1        10000                          
+           80 Sales                          John Russell                                   Oxford                              14000       6100    8955.88               34       304500                         2
+           90 Executive                      Steven King                                    Seattle                             24000      17000   19333.33                3        58000                         2
+          100 Finance                        Nancy Greenberg                                Seattle                             12000       6900       8600                6        51600                          
+          110 Accounting                     Shelley Higgins                                Seattle                             12000       8300      10150                2        20300                         2
+
+DEPARTMENT_ID DEPARTMENT_NAME                MANAGER_NAME                                   CITY                           MAX_SALARY MIN_SALARY AVG_SALARY NUM_OF_EMPLOYEES TOTAL_SALARY NUM_OF_EMPLOYEES_RESIGNED
+------------- ------------------------------ ---------------------------------------------- ------------------------------ ---------- ---------- ---------- ---------------- ------------ -------------------------
+          120 Treasury                                                                      Seattle                                                                                                                
+          130 Corporate Tax                                                                 Seattle                                                                                                                
+          140 Control And Credit                                                            Seattle                                                                                                                
+          150 Shareholder Services                                                          Seattle                                                                                                                
+          160 Benefits                                                                      Seattle                                                                                                                
+          170 Manufacturing                                                                 Seattle                                                                                                                
+          180 Construction                                                                  Seattle                                                                                                                
+          190 Contracting                                                                   Seattle                                                                                                                
+          200 Operations                                                                    Seattle                                                                                                                
+          210 IT Support                                                                    Seattle                                                                                                                
+          220 NOC                                                                           Seattle                                                                                                                
+
+DEPARTMENT_ID DEPARTMENT_NAME                MANAGER_NAME                                   CITY                           MAX_SALARY MIN_SALARY AVG_SALARY NUM_OF_EMPLOYEES TOTAL_SALARY NUM_OF_EMPLOYEES_RESIGNED
+------------- ------------------------------ ---------------------------------------------- ------------------------------ ---------- ---------- ---------- ---------------- ------------ -------------------------
+          230 IT Helpdesk                                                                   Seattle                                                                                                                
+          240 Government Sales                                                              Seattle                                                                                                                
+          250 Retail Sales                                                                  Seattle                                                                                                                
+          260 Recruiting                                                                    Seattle                                                                                                                
+          270 Payroll                                                                       Seattle                                                                                                                
+
+27 rows selected. 
+
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME                 EMAIL                     PHONE_NUMBER         HIRE_DAT JOB_ID         SALARY COMMISSION_PCT MANAGER_ID DEPARTMENT_ID     ROWNUM
+----------- -------------------- ------------------------- ------------------------- -------------------- -------- ---------- ---------- -------------- ---------- ------------- ----------
+        100 Steven               King                      SKING                     515.123.4567         17-06-87 AD_PRES         24000                                      90          1
+        101 Neena                Kochhar                   NKOCHHAR                  515.123.4568         21-09-89 AD_VP           17000                       100            90          2
+        102 Lex                  De Haan                   LDEHAAN                   515.123.4569         13-01-93 AD_VP           17000                       100            90          3
+        103 Alexander            Hunold                    AHUNOLD                   590.423.4567         03-01-90 IT_PROG          9000                       102            60          4
+        104 Bruce                Ernst                     BERNST                    590.423.4568         21-05-91 IT_PROG          6000                       103            60          5
+        105 David                Austin                    DAUSTIN                   590.423.4569         25-06-97 IT_PROG          4800                       103            60          6
+        106 Valli                Pataballa                 VPATABAL                  590.423.4560         05-02-98 IT_PROG          4800                       103            60          7
+        107 Diana                Lorentz                   DLORENTZ                  590.423.5567         07-02-99 IT_PROG          4200                       103            60          8
+        108 Nancy                Greenberg                 NGREENBE                  515.124.4569         17-08-94 FI_MGR          12000                       101           100          9
+        109 Daniel               Faviet                    DFAVIET                   515.124.4169         16-08-94 FI_ACCOUNT       9000                       108           100         10
+        110 John                 Chen                      JCHEN                     515.124.4269         28-09-97 FI_ACCOUNT       8200                       108           100         11
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME                 EMAIL                     PHONE_NUMBER         HIRE_DAT JOB_ID         SALARY COMMISSION_PCT MANAGER_ID DEPARTMENT_ID     ROWNUM
+----------- -------------------- ------------------------- ------------------------- -------------------- -------- ---------- ---------- -------------- ---------- ------------- ----------
+        111 Ismael               Sciarra                   ISCIARRA                  515.124.4369         30-09-97 FI_ACCOUNT       7700                       108           100         12
+        112 Jose Manuel          Urman                     JMURMAN                   515.124.4469         07-03-98 FI_ACCOUNT       7800                       108           100         13
+        113 Luis                 Popp                      LPOPP                     515.124.4567         07-12-99 FI_ACCOUNT       6900                       108           100         14
+        114 Den                  Raphaely                  DRAPHEAL                  515.127.4561         07-12-94 PU_MAN          11000                       100            30         15
+        115 Alexander            Khoo                      AKHOO                     515.127.4562         18-05-95 PU_CLERK         3100                       114            30         16
+        116 Shelli               Baida                     SBAIDA                    515.127.4563         24-12-97 PU_CLERK         2900                       114            30         17
+        117 Sigal                Tobias                    STOBIAS                   515.127.4564         24-07-97 PU_CLERK         2800                       114            30         18
+        118 Guy                  Himuro                    GHIMURO                   515.127.4565         15-11-98 PU_CLERK         2600                       114            30         19
+        119 Karen                Colmenares                KCOLMENA                  515.127.4566         10-08-99 PU_CLERK         2500                       114            30         20
+        120 Matthew              Weiss                     MWEISS                    650.123.1234         18-07-96 ST_MAN           8000                       100            50         21
+        121 Adam                 Fripp                     AFRIPP                    650.123.2234         10-04-97 ST_MAN           8200                       100            50         22
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME                 EMAIL                     PHONE_NUMBER         HIRE_DAT JOB_ID         SALARY COMMISSION_PCT MANAGER_ID DEPARTMENT_ID     ROWNUM
+----------- -------------------- ------------------------- ------------------------- -------------------- -------- ---------- ---------- -------------- ---------- ------------- ----------
+        122 Payam                Kaufling                  PKAUFLIN                  650.123.3234         01-05-95 ST_MAN           7900                       100            50         23
+        123 Shanta               Vollman                   SVOLLMAN                  650.123.4234         10-10-97 ST_MAN           6500                       100            50         24
+        124 Kevin                Mourgos                   KMOURGOS                  650.123.5234         16-11-99 ST_MAN           5800                       100            50         25
+        125 Julia                Nayer                     JNAYER                    650.124.1214         16-07-97 ST_CLERK         3200                       120            50         26
+        126 Irene                Mikkilineni               IMIKKILI                  650.124.1224         28-09-98 ST_CLERK         2700                       120            50         27
+        127 James                Landry                    JLANDRY                   650.124.1334         14-01-99 ST_CLERK         2400                       120            50         28
+        128 Steven               Markle                    SMARKLE                   650.124.1434         08-03-00 ST_CLERK         2200                       120            50         29
+        129 Laura                Bissot                    LBISSOT                   650.124.5234         20-08-97 ST_CLERK         3300                       121            50         30
+        130 Mozhe                Atkinson                  MATKINSO                  650.124.6234         30-10-97 ST_CLERK         2800                       121            50         31
+        131 James                Marlow                    JAMRLOW                   650.124.7234         16-02-97 ST_CLERK         2500                       121            50         32
+        132 TJ                   Olson                     TJOLSON                   650.124.8234         10-04-99 ST_CLERK         2100                       121            50         33
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME                 EMAIL                     PHONE_NUMBER         HIRE_DAT JOB_ID         SALARY COMMISSION_PCT MANAGER_ID DEPARTMENT_ID     ROWNUM
+----------- -------------------- ------------------------- ------------------------- -------------------- -------- ---------- ---------- -------------- ---------- ------------- ----------
+        133 Jason                Mallin                    JMALLIN                   650.127.1934         14-06-96 ST_CLERK         3300                       122            50         34
+        134 Michael              Rogers                    MROGERS                   650.127.1834         26-08-98 ST_CLERK         2900                       122            50         35
+        135 Ki                   Gee                       KGEE                      650.127.1734         12-12-99 ST_CLERK         2400                       122            50         36
+        136 Hazel                Philtanker                HPHILTAN                  650.127.1634         06-02-00 ST_CLERK         2200                       122            50         37
+        137 Renske               Ladwig                    RLADWIG                   650.121.1234         14-07-95 ST_CLERK         3600                       123            50         38
+        138 Stephen              Stiles                    SSTILES                   650.121.2034         26-10-97 ST_CLERK         3200                       123            50         39
+        139 John                 Seo                       JSEO                      650.121.2019         12-02-98 ST_CLERK         2700                       123            50         40
+        140 Joshua               Patel                     JPATEL                    650.121.1834         06-04-98 ST_CLERK         2500                       123            50         41
+        141 Trenna               Rajs                      TRAJS                     650.121.8009         17-10-95 ST_CLERK         3500                       124            50         42
+        142 Curtis               Davies                    CDAVIES                   650.121.2994         29-01-97 ST_CLERK         3100                       124            50         43
+        143 Randall              Matos                     RMATOS                    650.121.2874         15-03-98 ST_CLERK         2600                       124            50         44
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME                 EMAIL                     PHONE_NUMBER         HIRE_DAT JOB_ID         SALARY COMMISSION_PCT MANAGER_ID DEPARTMENT_ID     ROWNUM
+----------- -------------------- ------------------------- ------------------------- -------------------- -------- ---------- ---------- -------------- ---------- ------------- ----------
+        144 Peter                Vargas                    PVARGAS                   650.121.2004         09-07-98 ST_CLERK         2500                       124            50         45
+        145 John                 Russell                   JRUSSEL                   011.44.1344.429268   01-10-96 SA_MAN          14000             .4        100            80         46
+        146 Karen                Partners                  KPARTNER                  011.44.1344.467268   05-01-97 SA_MAN          13500             .3        100            80         47
+        147 Alberto              Errazuriz                 AERRAZUR                  011.44.1344.429278   10-03-97 SA_MAN          12000             .3        100            80         48
+        148 Gerald               Cambrault                 GCAMBRAU                  011.44.1344.619268   15-10-99 SA_MAN          11000             .3        100            80         49
+        149 Eleni                Zlotkey                   EZLOTKEY                  011.44.1344.429018   29-01-00 SA_MAN          10500             .2        100            80         50
+        150 Peter                Tucker                    PTUCKER                   011.44.1344.129268   30-01-97 SA_REP          10000             .3        145            80         51
+        151 David                Bernstein                 DBERNSTE                  011.44.1344.345268   24-03-97 SA_REP           9500            .25        145            80         52
+        152 Peter                Hall                      PHALL                     011.44.1344.478968   20-08-97 SA_REP           9000            .25        145            80         53
+        153 Christopher          Olsen                     COLSEN                    011.44.1344.498718   30-03-98 SA_REP           8000             .2        145            80         54
+        154 Nanette              Cambrault                 NCAMBRAU                  011.44.1344.987668   09-12-98 SA_REP           7500             .2        145            80         55
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME                 EMAIL                     PHONE_NUMBER         HIRE_DAT JOB_ID         SALARY COMMISSION_PCT MANAGER_ID DEPARTMENT_ID     ROWNUM
+----------- -------------------- ------------------------- ------------------------- -------------------- -------- ---------- ---------- -------------- ---------- ------------- ----------
+        155 Oliver               Tuvault                   OTUVAULT                  011.44.1344.486508   23-11-99 SA_REP           7000            .15        145            80         56
+        156 Janette              King                      JKING                     011.44.1345.429268   30-01-96 SA_REP          10000            .35        146            80         57
+        157 Patrick              Sully                     PSULLY                    011.44.1345.929268   04-03-96 SA_REP           9500            .35        146            80         58
+        158 Allan                McEwen                    AMCEWEN                   011.44.1345.829268   01-08-96 SA_REP           9000            .35        146            80         59
+        159 Lindsey              Smith                     LSMITH                    011.44.1345.729268   10-03-97 SA_REP           8000             .3        146            80         60
+        160 Louise               Doran                     LDORAN                    011.44.1345.629268   15-12-97 SA_REP           7500             .3        146            80         61
+        161 Sarath               Sewall                    SSEWALL                   011.44.1345.529268   03-11-98 SA_REP           7000            .25        146            80         62
+        162 Clara                Vishney                   CVISHNEY                  011.44.1346.129268   11-11-97 SA_REP          10500            .25        147            80         63
+        163 Danielle             Greene                    DGREENE                   011.44.1346.229268   19-03-99 SA_REP           9500            .15        147            80         64
+        164 Mattea               Marvins                   MMARVINS                  011.44.1346.329268   24-01-00 SA_REP           7200             .1        147            80         65
+        165 David                Lee                       DLEE                      011.44.1346.529268   23-02-00 SA_REP           6800             .1        147            80         66
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME                 EMAIL                     PHONE_NUMBER         HIRE_DAT JOB_ID         SALARY COMMISSION_PCT MANAGER_ID DEPARTMENT_ID     ROWNUM
+----------- -------------------- ------------------------- ------------------------- -------------------- -------- ---------- ---------- -------------- ---------- ------------- ----------
+        166 Sundar               Ande                      SANDE                     011.44.1346.629268   24-03-00 SA_REP           6400             .1        147            80         67
+        167 Amit                 Banda                     ABANDA                    011.44.1346.729268   21-04-00 SA_REP           6200             .1        147            80         68
+        168 Lisa                 Ozer                      LOZER                     011.44.1343.929268   11-03-97 SA_REP          11500            .25        148            80         69
+        169 Harrison             Bloom                     HBLOOM                    011.44.1343.829268   23-03-98 SA_REP          10000             .2        148            80         70
+        170 Tayler               Fox                       TFOX                      011.44.1343.729268   24-01-98 SA_REP           9600             .2        148            80         71
+        171 William              Smith                     WSMITH                    011.44.1343.629268   23-02-99 SA_REP           7400            .15        148            80         72
+        172 Elizabeth            Bates                     EBATES                    011.44.1343.529268   24-03-99 SA_REP           7300            .15        148            80         73
+        173 Sundita              Kumar                     SKUMAR                    011.44.1343.329268   21-04-00 SA_REP           6100             .1        148            80         74
+        174 Ellen                Abel                      EABEL                     011.44.1644.429267   11-05-96 SA_REP          11000             .3        149            80         75
+        175 Alyssa               Hutton                    AHUTTON                   011.44.1644.429266   19-03-97 SA_REP           8800            .25        149            80         76
+        176 Jonathon             Taylor                    JTAYLOR                   011.44.1644.429265   24-03-98 SA_REP           8600             .2        149            80         77
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME                 EMAIL                     PHONE_NUMBER         HIRE_DAT JOB_ID         SALARY COMMISSION_PCT MANAGER_ID DEPARTMENT_ID     ROWNUM
+----------- -------------------- ------------------------- ------------------------- -------------------- -------- ---------- ---------- -------------- ---------- ------------- ----------
+        177 Jack                 Livingston                JLIVINGS                  011.44.1644.429264   23-04-98 SA_REP           8400             .2        149            80         78
+        178 Kimberely            Grant                     KGRANT                    011.44.1644.429263   24-05-99 SA_REP           7000            .15        149                       79
+        179 Charles              Johnson                   CJOHNSON                  011.44.1644.429262   04-01-00 SA_REP           6200             .1        149            80         80
+        180 Winston              Taylor                    WTAYLOR                   650.507.9876         24-01-98 SH_CLERK         3200                       120            50         81
+        181 Jean                 Fleaur                    JFLEAUR                   650.507.9877         23-02-98 SH_CLERK         3100                       120            50         82
+        182 Martha               Sullivan                  MSULLIVA                  650.507.9878         21-06-99 SH_CLERK         2500                       120            50         83
+        183 Girard               Geoni                     GGEONI                    650.507.9879         03-02-00 SH_CLERK         2800                       120            50         84
+        184 Nandita              Sarchand                  NSARCHAN                  650.509.1876         27-01-96 SH_CLERK         4200                       121            50         85
+        185 Alexis               Bull                      ABULL                     650.509.2876         20-02-97 SH_CLERK         4100                       121            50         86
+        186 Julia                Dellinger                 JDELLING                  650.509.3876         24-06-98 SH_CLERK         3400                       121            50         87
+        187 Anthony              Cabrio                    ACABRIO                   650.509.4876         07-02-99 SH_CLERK         3000                       121            50         88
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME                 EMAIL                     PHONE_NUMBER         HIRE_DAT JOB_ID         SALARY COMMISSION_PCT MANAGER_ID DEPARTMENT_ID     ROWNUM
+----------- -------------------- ------------------------- ------------------------- -------------------- -------- ---------- ---------- -------------- ---------- ------------- ----------
+        188 Kelly                Chung                     KCHUNG                    650.505.1876         14-06-97 SH_CLERK         3800                       122            50         89
+        189 Jennifer             Dilly                     JDILLY                    650.505.2876         13-08-97 SH_CLERK         3600                       122            50         90
+        190 Timothy              Gates                     TGATES                    650.505.3876         11-07-98 SH_CLERK         2900                       122            50         91
+        191 Randall              Perkins                   RPERKINS                  650.505.4876         19-12-99 SH_CLERK         2500                       122            50         92
+        192 Sarah                Bell                      SBELL                     650.501.1876         04-02-96 SH_CLERK         4000                       123            50         93
+        193 Britney              Everett                   BEVERETT                  650.501.2876         03-03-97 SH_CLERK         3900                       123            50         94
+        194 Samuel               McCain                    SMCCAIN                   650.501.3876         01-07-98 SH_CLERK         3200                       123            50         95
+        195 Vance                Jones                     VJONES                    650.501.4876         17-03-99 SH_CLERK         2800                       123            50         96
+        196 Alana                Walsh                     AWALSH                    650.507.9811         24-04-98 SH_CLERK         3100                       124            50         97
+        197 Kevin                Feeney                    KFEENEY                   650.507.9822         23-05-98 SH_CLERK         3000                       124            50         98
+        198 Donald               OConnell                  DOCONNEL                  650.507.9833         21-06-99 SH_CLERK         2600                       124            50         99
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME                 EMAIL                     PHONE_NUMBER         HIRE_DAT JOB_ID         SALARY COMMISSION_PCT MANAGER_ID DEPARTMENT_ID     ROWNUM
+----------- -------------------- ------------------------- ------------------------- -------------------- -------- ---------- ---------- -------------- ---------- ------------- ----------
+        199 Douglas              Grant                     DGRANT                    650.507.9844         13-01-00 SH_CLERK         2600                       124            50        100
+        200 Jennifer             Whalen                    JWHALEN                   515.123.4444         17-09-87 AD_ASST          4400                       101            10        101
+        201 Michael              Hartstein                 MHARTSTE                  515.123.5555         17-02-96 MK_MAN          13000                       100            20        102
+        202 Pat                  Fay                       PFAY                      603.123.6666         17-08-97 MK_REP           6000                       201            20        103
+        203 Susan                Mavris                    SMAVRIS                   515.123.7777         07-06-94 HR_REP           6500                       101            40        104
+        204 Hermann              Baer                      HBAER                     515.123.8888         07-06-94 PR_REP          10000                       101            70        105
+        205 Shelley              Higgins                   SHIGGINS                  515.123.8080         07-06-94 AC_MGR          12000                       101           110        106
+        206 William              Gietz                     WGIETZ                    515.123.8181         07-06-94 AC_ACCOUNT       8300                       205           110        107
+
+107 rows selected. 
+
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME                 EMAIL                     PHONE_NUMBER         HIRE_DAT JOB_ID         SALARY COMMISSION_PCT MANAGER_ID DEPARTMENT_ID THIRD_MAX_SALARY
+----------- -------------------- ------------------------- ------------------------- -------------------- -------- ---------- ---------- -------------- ---------- ------------- ----------------
+        145 John                 Russell                   JRUSSEL                   011.44.1344.429268   01-10-96 SA_MAN          14000             .4        100            80            14000
+
+
+LOCATION_ID POSTAL_CODE  CITY                           CO
+----------- ------------ ------------------------------ --
+       1000 00989        Roma                           IT
+       1100 10934        Venice                         IT
+       1200 1689         Tokyo                          JP
+       1300 6823         Hiroshima                      JP
+       1400 26192        Southlake                      US
+       1500 99236        South San Francisco            US
+       1600 50090        South Brunswick                US
+       1700 98199        Seattle                        US
+       1800 M5V 2L7      Toronto                        CA
+       1900 YSW 9T2      Whitehorse                     CA
+       2000 190518       Beijing                        CN
+
+LOCATION_ID POSTAL_CODE  CITY                           CO
+----------- ------------ ------------------------------ --
+       2100 490231       Bombay                         IN
+       2200 2901         Sydney                         AU
+       2300 540198       Singapore                      SG
+       2400              London                         UK
+       2500 OX9 9ZB      Oxford                         UK
+       2600 09629850293  Stretford                      UK
+       2700 80925        Munich                         DE
+       2800 01307-002    Sao Paulo                      BR
+       2900 1730         Geneva                         CH
+       3000 3095         Bern                           CH
+       3100 3029SK       Utrecht                        NL
+
+LOCATION_ID POSTAL_CODE  CITY                           CO
+----------- ------------ ------------------------------ --
+       3200 11932        Mexico City                    MX
+       1000 411007       PUNE                           IN
+       1001 495442       RATANPUR                       IN
+       1002 110001       DELHI                          IN
+       1003 989          Roma                           IT
+       1004 10934        Venice                         IT
+       1005 1689         Tokyo                          JP
+
+29 rows selected. 
+
+
+LOCATION_ID POSTAL_CODE  CITY                           CO      COUNT
+----------- ------------ ------------------------------ -- ----------
+       1000 00989        Roma                           IT          2
+       1000 411007       PUNE                           IN          2
+
+
+LOCATION_ID POSTAL_CODE  CITY                           CO
+----------- ------------ ------------------------------ --
+       1000 411007       PUNE                           IN
+       1001 495442       RATANPUR                       IN
+       1002 110001       DELHI                          IN
+       1003 989          Roma                           IT
+       1100 10934        Venice                         IT
+       1200 1689         Tokyo                          JP
+       1300 6823         Hiroshima                      JP
+       1400 26192        Southlake                      US
+       1500 99236        South San Francisco            US
+       1600 50090        South Brunswick                US
+       1700 98199        Seattle                        US
+
+LOCATION_ID POSTAL_CODE  CITY                           CO
+----------- ------------ ------------------------------ --
+       1800 M5V 2L7      Toronto                        CA
+       1900 YSW 9T2      Whitehorse                     CA
+       2000 190518       Beijing                        CN
+       2100 490231       Bombay                         IN
+       2200 2901         Sydney                         AU
+       2300 540198       Singapore                      SG
+       2400              London                         UK
+       2500 OX9 9ZB      Oxford                         UK
+       2600 09629850293  Stretford                      UK
+       2700 80925        Munich                         DE
+       2800 01307-002    Sao Paulo                      BR
+
+LOCATION_ID POSTAL_CODE  CITY                           CO
+----------- ------------ ------------------------------ --
+       2900 1730         Geneva                         CH
+       3000 3095         Bern                           CH
+       3100 3029SK       Utrecht                        NL
+       3200 11932        Mexico City                    MX
+
+26 rows selected. 
+
+
+CITY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Beijing,Bern,Bombay,DELHI,Geneva,Hiroshima,London,Mexico City,Munich,Oxford,PUNE,RATANPUR,Roma,Roma,Sao Paulo,Seattle,Singapore,South Brunswick,South San Francisco,Southlake,Stretford,Sydney,Tokyo,Tokyo,Toronto,Utrecht,Venice,Venice,Whitehorse
+
+
+CO
+--
+CITY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+AU 
+Sydney                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+
+BR 
+Sao Paulo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+
+CA 
+Toronto,Whitehorse                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+
+
+CO
+--
+CITY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CH 
+Bern,Geneva                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+
+CN 
+Beijing                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+
+DE 
+Munich                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+
+
+CO
+--
+CITY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+IN 
+Bombay,DELHI,PUNE,RATANPUR                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+
+IT 
+Roma,Venice                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+
+JP 
+Hiroshima,Tokyo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+
+
+CO
+--
+CITY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+MX 
+Mexico City                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+
+NL 
+Utrecht                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+
+SG 
+Singapore                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+
+
+CO
+--
+CITY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+UK 
+London,Oxford,Stretford                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+
+US 
+Seattle,South Brunswick,South San Francisco,Southlake                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+
+
+14 rows selected. 
+
+no rows selected
